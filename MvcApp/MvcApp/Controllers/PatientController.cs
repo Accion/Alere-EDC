@@ -111,6 +111,19 @@ namespace MvcApp.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult SearchPatient(string searchString)
+        {
+            var patient = from m in db.Patients
+                          select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                patient = patient.Where(s => s.FirstName.Contains(searchString));
+            }
+
+            return View(patient);
+        }
+
         protected override void Dispose(bool disposing)
         {
             db.Dispose();

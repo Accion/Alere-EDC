@@ -11,7 +11,17 @@
     <body>
         <header>
             <div class="content-wrapper">
-               
+                <div class="float-right">
+                   @* <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>*@
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Patient", "Index", "Patient")</li>
+                            <li>@Html.ActionLink("Search Patient", "searchPatient", "Patient")</li>
+                        </ul>
+                    </nav>
+                </div>
                 </div>
             @*<div class="content-wrapper">
                 <div class="float-left">
