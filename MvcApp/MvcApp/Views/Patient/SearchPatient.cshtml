@@ -1,33 +1,38 @@
 ﻿@model IEnumerable<MvcApp.Models.Patient>
 
 @{
-    ViewBag.Title = "Patients";
+    ViewBag.Title = "Search Patient";
 }
 
-<h2>Index</h2>
+<h2>Search Patient</h2>
 
 <p>
-    @Html.ActionLink("Create Patient", "Create")
+   
+
+    @using (Html.BeginForm()){    
+         <p> First Name: @Html.TextBox("SearchString") <br />   
+         <input type="submit" value="Search" /></p> 
+        } 
 </p>
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.FirstName)              
+           First Name &nbsp;
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MiddleName)
+           Middle Name &nbsp;
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastName)
+           LastName &nbsp;
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DOB)
+            DOB &nbsp;
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Group)
+            Group &nbsp;
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Weight)
+           Weight &nbsp;
         </th>
         <th></th>
     </tr>
