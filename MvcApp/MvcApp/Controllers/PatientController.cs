@@ -129,5 +129,10 @@ namespace MvcApp.Controllers
             db.Dispose();
             base.Dispose(disposing);
         }
+
+        public ActionResult StudyEvents()
+        {
+            return View();
+        }
     }
 }
