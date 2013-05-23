@@ -10,3 +10,4 @@ Team members (offshore):
 2. Vinoth Ashok <vinoth.ashok@accionlabs.com> <br />
 3. Vikas Mendhe <vikas.mendhe@accionlabs.com> <br />
 4. Hiten Parmar <hiten.parmar@accionlabs.com> <br />
+5. Sharda Bhartula <sharda.bhartula@accionlabs.com> <br />
